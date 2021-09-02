@@ -94,6 +94,14 @@ h4 {
     color: white;
 }
 
+h5 {
+    font-size: 30pt;
+    font-weight: 700;  
+    margin-top: 40px;
+    text-align: center;
+    
+}
+
 #copyText {
     font-size: 50pt;
     font-weight: 400;
