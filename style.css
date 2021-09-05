@@ -47,7 +47,6 @@ body, html {
 
 /* Place text in the middle of the image */
 #hero-text {
-  text-align: left;
   margin-top: 40px;
   margin-bottom: 100px;
   color: black;
@@ -55,67 +54,74 @@ body, html {
   font-family: Raleway,-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-@media (min-width: 576px) {
-  h1 {
-      font-size: 60pt;
-  }
+#hero-text h1{
+  font-size: calc(2.8rem + 1.5vw);
+}
 
-  h2 {
-      font-size: 30pt;
-  }
+h1 {
+    font-size: calc(1.9rem + 1.5vw);
+}
 
-  #pageH2 {
-      font-size: 30pt;
-  }
+#copyText{
+  font-size: calc(1.15rem + 1.5vw);
+}
 
-  h3 {
-      font-size: 30pt;
-  }
+h2, h3, #pageH2 {
+    font-size: calc(1rem + 1.5vw);
+}
 
-  h4 {
-      font-size: 20pt;
-  }
+h4{
+  font-size: calc(0.9rem + 1.5vw);
+}
 
-  h5 {
-      font-size: 26pt;
-  }
+h5{
+  font-size: calc(0.95rem + 1.5vw);
+}
+
+.sm-txt{
+  font-size: calc(0.7rem + 1.5vw);
+}
+
+@media (min-width: 200px) {
 
   #copyText {
-      font-size: 40pt;
-      line-height: 65px;
+      line-height: 35px;
+  }
+
+  .sm-center{
+    text-align: center;
+  }
+
+  .btn-primary {
+      font-size: 16pt;
   }
  }
 
-@media (min-width: 768px) {  }
+@media (min-width: 768px) {
+  #copyText {
+      line-height: 55px;
+  }
+
+  .sm-center{
+    text-align: center;
+  }
+
+  .btn-primary {
+      font-size: 18pt;
+  }
+}
 
 @media (min-width: 992px) {
-  h1 {
-      font-size: 90pt;
-  }
-
-  h2 {
-      font-size: 40pt;
-  }
-
-  #pageH2 {
-      font-size: 40pt;
-  }
-
-  h3 {
-      font-size: 40pt;
-  }
-
-  h4 {
-      font-size: 26pt;
-  }
-
-  h5 {
-      font-size: 30pt;
-  }
-
   #copyText {
-      font-size: 50pt;
       line-height: 75px;
+  }
+
+  .sm-center{
+    text-align: left;
+  }
+
+  .btn-primary {
+      font-size: 20pt;
   }
 
 }
@@ -160,20 +166,18 @@ h5 {
 
 .btn-primary {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 20pt;
     font-weight: 700;
     color: white;
     background: #C8304C;
     border: 0px;
     letter-spacing: 0.05em;
     margin-top: 40px;
-
-
+    font-size: calc(0.5rem + 1.5vw);
 }
 
 .btn:hover {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 20pt;
+    font-size: calc(0.5rem + 1.5vw);
     font-weight: 700;
     color: #C8304C;
     background: rgba(245, 245, 245, 0.349);
@@ -184,7 +188,7 @@ h5 {
 
 .btn-secondary {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 16pt;
+    font-size: calc(0.5rem + 1.5vw);
     font-weight: 600;
     color: #C8304C;
     background: rgba(245, 245, 245, 0.349);
@@ -197,7 +201,7 @@ h5 {
 
 .btn-secondary:hover {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 16pt;
+    font-size: calc(0.5rem + 1.5vw);
     font-weight: 600;
     color: white;
     background: #C8304C;
