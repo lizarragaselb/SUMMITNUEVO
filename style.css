@@ -21,6 +21,24 @@ body, html {
 
 }
 
+#logo{
+  max-width: 100%;
+}
+
+#nav-collapse-bt{
+  position: relative;
+  height: 40px;
+  top: calc(50% - 20px);
+}
+
+#join-lnk{
+  border: 1px solid #c8304c;
+  box-sizing: border-box;
+  border-radius: 8px;
+  color: #c8304c;
+  padding: 5px 10px;
+}
+
 /* The hero image */
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
