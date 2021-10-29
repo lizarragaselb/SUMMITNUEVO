@@ -30,7 +30,9 @@ body, html {
 }
 
 #logo{
-  max-width: 100%;
+  max-width: 70%;
+  padding-top: 20px;
+  padding-left: 20px;
 }
 
 #nav-collapse-bt{
@@ -49,7 +51,7 @@ body, html {
 
 /* The hero image */
 #hero-home{
-    height: 100%;
+    height: au;
 }
 
 .hero-image {
@@ -275,7 +277,7 @@ h5 {
 
 
 #text3{
-    font-size: calc(0.75rem + 1vw);
+    font-size: calc(0.60rem + 1vw);
     font-weight: 400;
     margin-top: 40px;
     margin-bottom: 40px;
