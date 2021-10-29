@@ -51,7 +51,7 @@ body, html {
 
 /* The hero image */
 #hero-home{
-    height: au;
+    height: 80%;
 }
 
 .hero-image {
@@ -68,7 +68,7 @@ body, html {
     background-image: linear-gradient(rgba(32, 32, 32, 0.911), rgba(184, 125, 125, 0.205)), url("Img/about.png");
 
     /* Set a specific height */
-    height: 80%;
+    height: 100%;
 
     /* Position and center the image to scale nicely on all screens */
     background-position: center;
