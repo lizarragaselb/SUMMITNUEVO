@@ -284,7 +284,7 @@ h5 {
 
 
 .card {
-    border: solid 0.5px #F1EFEF;
+    border: none;
     margin-top: 60px;
     background-image: linear-gradient(white,white, #f1efef79);
     
