@@ -29,11 +29,10 @@ body, html {
 
 }
 
-#logo{
-  max-width: 70%;
-  padding-top: 20px;
-  padding-left: 20px;
-}
+#logo {
+    max-width: 100%; /* Establece un ancho máximo para que el logotipo no se desborde */
+    height: auto; /* Permite que el logotipo conserve su relación de aspecto original */
+  }
 
 #nav-collapse-bt{
   position: relative;
@@ -58,18 +57,90 @@ body, html {
     background-color: #f7f0f0;
     
 }
-.hero-image {
-  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image:url("Img/NewHero4.png");
-  background-color: #f7f0f0;
-  height: 857px;
 
+/* NEW CAROUSEL------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
-  /* Position and center the image to scale nicely on all screens */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+#myCarousel {
+    background-color: #f7f0f0;
+    background-image: url('Img/Image 9.jpg');
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+    border: none;
 }
+
+.darken-image {
+    filter: brightness(60%); /* Ajusta el valor según la cantidad de oscurecimiento deseada */
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    color: #f3eded !important; /* Cambia el color a blanco y usa !important */
+    opacity: 0.6 !important; /* Asegura que la opacidad sea 100% */
+    background-color: transparent !important; /* Asegura que el fondo sea transparente */
+    border: none !important; /* Asegura que no haya borde */
+    box-shadow: none !important; /* Asegura que no haya sombra */
+  }
+
+  /* Ajusta el tamaño del ícono */
+  .fa-circle-chevron-right {
+    font-size: 30px; /* Cambia el tamaño según tus preferencias */
+  }
+
+
+  /* Ajusta el tamaño del ícono */
+  .fa-chevron-circle-left {
+    font-size: 30px; /* Cambia el tamaño según tus preferencias */
+  }
+  .mi-icono {
+    text-decoration: none;
+  }
+  
+
+/* Estilos para pantallas grandes (por ejemplo, escritorio) */
+@media (min-width: 768px) {
+    #hero-text {
+      width: auto; /* Ancho automático para el texto */
+      left: 10rem; /* Ajusta el margen izquierdo según sea necesario */
+      padding: 2rem; /* Ajusta el relleno según sea necesario */
+      top: 50%; /* Centra verticalmente */
+      transform: translateY(-50%);
+    }
+  
+    /* Ajusta el tamaño del texto para pantallas grandes */
+    #hero-text h1 {
+      font-size: 2.5rem;
+    }
+  
+    #hero-text p {
+      font-size: 1.2rem;
+    }
+  }
+  
+  /* Estilos para pantallas pequeñas (por ejemplo, dispositivos móviles) */
+  @media (max-width: 767px) {
+    #hero-text {
+      width: 100%; /* Ancho completo para el texto */
+      left: 0; /* Sin margen izquierdo */
+      padding: 1rem; /* Ajusta el relleno según sea necesario */
+      top: auto; /* Restablece la posición vertical */
+      transform: none; /* Restablece la transformación */
+      text-align: center; /* Centra el texto horizontalmente */
+    }
+  
+    /* Ajusta el tamaño del texto para pantallas pequeñas */
+    #hero-text h1 {
+      font-size: 1.8rem;
+    }
+  
+    #hero-text p {
+      font-size: 1rem;
+    }
+  }
+  
+  #hero-home {
+    margin-bottom: -50px; /* Ajusta el valor según sea necesario para eliminar el espacio */
+  }
+  
+/* NEW CAROUSEL------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
 #heroAbout {
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
     background-image: url("Img/about.png");
@@ -410,5 +481,6 @@ hr.style1{
 }
 
 #title2{
-    margin-top: -3rem;
+    margin-top: 3rem;
+    margin-bottom: -50px;
 }
