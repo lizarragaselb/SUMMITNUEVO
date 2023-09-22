@@ -60,86 +60,122 @@ body, html {
 
 /* NEW CAROUSEL------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
-#myCarousel {
-    background-color: #f7f0f0;
-    background-image: url('Img/Image 9.jpg');
-    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
-    border: none;
+/* Estilos para el carrusel de Owl Carousel */
+.owl-carousel .owl-item img {
+  width: 100%;
+  display: block;
+  filter: brightness(85%);
 }
 
-.darken-image {
-    filter: brightness(60%); /* Ajusta el valor según la cantidad de oscurecimiento deseada */
-  }
-  .carousel-control-prev,
-  .carousel-control-next {
-    color: #f3eded !important; /* Cambia el color a blanco y usa !important */
-    opacity: 0.6 !important; /* Asegura que la opacidad sea 100% */
-    background-color: transparent !important; /* Asegura que el fondo sea transparente */
-    border: none !important; /* Asegura que no haya borde */
-    box-shadow: none !important; /* Asegura que no haya sombra */
-  }
+/* Estilos para el contenedor del carrusel */
+.owl-carousel {
+  position: relative;
+}
 
-  /* Ajusta el tamaño del ícono */
-  .fa-circle-chevron-right {
-    font-size: 30px; /* Cambia el tamaño según tus preferencias */
-  }
+/* Ajusta el ancho y la posición de los controles del carrusel */
+.owl-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+}
 
+.owl-nav .owl-prev, .owl-nav .owl-next {
+  display: inline-block;
+  font-size: 2rem;
+  color: #A83E51;
+  background: #A83E51;
+  padding: 30px 30px;
+  border-radius: 30px;
+  margin: 0 100px;
+  cursor: pointer;
+}
 
-  /* Ajusta el tamaño del ícono */
-  .fa-chevron-circle-left {
-    font-size: 30px; /* Cambia el tamaño según tus preferencias */
-  }
-  .mi-icono {
-    text-decoration: none;
-  }
-  
+.owl-nav .owl-prev:hover, .owl-nav .owl-next:hover {
+  background: #A83E51;
+}
 
-/* Estilos para pantallas grandes (por ejemplo, escritorio) */
-@media (min-width: 768px) {
-    #hero-text {
-      width: auto; /* Ancho automático para el texto */
-      left: 10rem; /* Ajusta el margen izquierdo según sea necesario */
-      padding: 2rem; /* Ajusta el relleno según sea necesario */
-      top: 50%; /* Centra verticalmente */
-      transform: translateY(-50%);
-    }
+/* Ajusta el estilo de la paginación si es necesario */
+.owl-dots {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.owl-dots .owl-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #A83E51;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.owl-dots .owl-dot.active {
+  background: #A83E51;
+}
+
+/* Estilos para el texto y botones */
+#hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-38%, -80%);
+  text-align: left;
+  z-index: 2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); /* Agrega una sombra al texto */
   
-    /* Ajusta el tamaño del texto para pantallas grandes */
-    #hero-text h1 {
-      font-size: 2.5rem;
-    }
-  
-    #hero-text p {
-      font-size: 1.2rem;
-    }
-  }
-  
-  /* Estilos para pantallas pequeñas (por ejemplo, dispositivos móviles) */
-  @media (max-width: 767px) {
-    #hero-text {
-      width: 100%; /* Ancho completo para el texto */
-      left: 0; /* Sin margen izquierdo */
-      padding: 1rem; /* Ajusta el relleno según sea necesario */
-      top: auto; /* Restablece la posición vertical */
-      transform: none; /* Restablece la transformación */
-      text-align: center; /* Centra el texto horizontalmente */
-    }
-  
-    /* Ajusta el tamaño del texto para pantallas pequeñas */
-    #hero-text h1 {
-      font-size: 1.8rem;
-    }
-  
-    #hero-text p {
-      font-size: 1rem;
-    }
-  }
-  
-  #hero-home {
-    margin-bottom: -50px; /* Ajusta el valor según sea necesario para eliminar el espacio */
-  }
-  
-/* NEW CAROUSEL------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+}
+
+#hero-text h1 {
+  color: #ffffff;
+  font-size: 3.3rem;
+  line-height: 1.2;
+  margin-top: 0;
+}
+
+#copyText {
+  color: rgb(255, 255, 255);
+  margin-bottom: 0.5;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.btn {
+  margin-top: 1rem;
+}
+
+/* Asegura que el carrusel esté por debajo del texto y botones */
+.owl-carousel {
+  z-index: 1;
+}
+
+.carousel-inner img {
+  filter: contrast(0%); /* Ajusta el valor según tus preferencias */
+}
+
+/* Estilos personalizados para el carrusel */
+#carousel1 {
+  background-color: #f0f0f0;
+}
+
+/* Estilos para los botones de navegación */
+.owl-prev, .owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 25px;
+}
+
+.owl-prev {
+  left: 30px;
+}
+
+.owl-next {
+  right: 30px;
+}
+/* Hero About------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 #heroAbout {
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
@@ -480,7 +516,3 @@ hr.style1{
     align-items: flex-start;
 }
 
-#title2{
-    margin-top: 3rem;
-    margin-bottom: -50px;
-}
