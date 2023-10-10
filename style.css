@@ -50,11 +50,13 @@ body, html {
 
 #Primal{
     background-color: #f7f0f0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
 }
 
 .navbar {
     background-color: #f7f0f0;
+    
     
 }
 
@@ -124,6 +126,8 @@ body, html {
   text-align: left;
   z-index: 2;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); /* Agrega una sombra al texto */
+  font-family:Raleway,-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
   
 }
 
@@ -132,6 +136,8 @@ body, html {
   font-size: 3.3rem;
   line-height: 1.2;
   margin-top: 0;
+  font-family:Raleway,-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
 }
 
 #copyText {
@@ -140,6 +146,8 @@ body, html {
   font-size: 1.8rem;
   font-weight: 500;
   line-height: 1.4;
+  font-family:Raleway,-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
 }
 
 .btn {
@@ -155,71 +163,84 @@ body, html {
   filter: contrast(0%); /* Ajusta el valor según tus preferencias */
 }
 
-/* Estilos personalizados para el carrusel */
-#carousel1 {
-  background-color: #f0f0f0;
-}
 
-/* Estilos para los botones de navegación */
-.owl-prev, .owl-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 25px;
-}
 
-.owl-prev {
-  left: 30px;
-}
-
-.owl-next {
-  right: 30px;
-}
 /* Hero About------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 #heroAbout {
-    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-image: url("Img/about.png");
-    background-color: #f7f0f0;
+  background-color: #f7f0f0;
+  background-image: url('Img/About_us_hero2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Alinea el contenido a la izquierda */
+ 
+}
 
+.hero-content {
+  color: #A83E51; /* Color del texto */
+  text-align: left; /* Alinea el texto a la izquierda */
+  font-family: Raleway,-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+  margin-left: 80px;
+}
 
-    /* Set a specific height */
-    
+.btn {
+  padding: 10px 20px;
+  background-color: #007bff; /* Color del botón */
+  color: #fff; /* Color del texto del botón */
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  display: inline-block;
+}
 
-    /* Position and center the image to scale nicely on all screens */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+.btn:hover {
+  background-color: #0056b3; /* Color del botón al pasar el ratón por encima */
+}
 
-  }
+/* Hero Services------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 #heroServices {
-    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-image: url("Img/services.png");
-    background-color: #f7f0f0;
-
-
-    /* Set a specific height */
-    
-
-    /* Position and center the image to scale nicely on all screens */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-
-  }
-
-/* Place text in the middle of the image */
-#hero-text {
-  margin-top: 200px;
-  margin-bottom: 100px;
-  color: #A83E51;
-  
-  font-family: Raleway,-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
+  background-color: #f7f0f0;
+  background-image: url('Img/Services2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Alinea el contenido a la izquierda */
+ 
 }
+
+.hero-content {
+  color: #A83E51; /* Color del texto */
+  text-align: left; /* Alinea el texto a la izquierda */
+  font-family: Raleway,-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+  margin-left: 80px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #007bff; /* Color del botón */
+  color: #fff; /* Color del texto del botón */
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Color del botón al pasar el ratón por encima */
+}
+
 
 #hero-text h1{
   font-size: calc(2.8rem + 1.5vw);
@@ -229,6 +250,7 @@ body, html {
 h1 {
     font-size: calc(1.9rem + 1.5vw);
     font-weight:800;
+    
 }
 
 #copyText{
@@ -516,3 +538,44 @@ hr.style1{
     align-items: flex-start;
 }
 
+/* Estilos para la galería */
+.container {
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  text-align: center; /* Centra el contenido dentro del contenedor */
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: -5px; /* Reduzca el espacio entre las imágenes */
+}
+
+.gallery img {
+  max-width: calc(100% - 10px); /* Ancho máximo para tres imágenes por fila */
+  height: auto;
+  margin: 5px; /* Espacio entre las imágenes */
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
+/* Estilos para el slider */
+.slider-container {
+  max-width: 1100px; /* Ancho máximo del slider */
+  margin: 0 auto; /* Centrar el slider horizontalmente */
+  overflow: hidden; /* Ocultar elementos fuera del slider */
+  margin-top: 100px;
+}
+
+.slider {
+  display: flex; /* Mostrar los slides en línea */
+  transition: transform 0.5s ease; /* Efecto de deslizamiento suave */
+}
+
+.slide {
+  display: flex; /* Mostrar las imágenes en línea */
+}
+
+.slide img {
+  margin: 10px; /* Espacio entre las imágenes */
+}
