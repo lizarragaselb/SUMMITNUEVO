@@ -265,7 +265,7 @@ h2, h3, #pageH2 {
 }
 
 h4{
-  font-size: calc(0.9rem + 1.5vw);
+  font-size: calc(0.6rem + 1.5vw);
 }
 
 h5{
